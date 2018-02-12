@@ -211,3 +211,19 @@ The sanity check across frames can be improved by incorporating more available d
 
 
 
+Description of Output Images 
+---
+
+There are two sets of images, for inputs test1 and test2. The filenames are formatted as [input_file]_[Number]_[Description].png. The summary of description are as follows:
+
+- test#_01_undist: Image after correcting for distortions.
+- test#_02_bin_stack: The visualization of contributions of binary thresholding on Sobel, Red channel, and Saturation channel towards a binary threshold image.
+- test#_03_bin_thresh: The actual binary threshold image.
+- test#_04_roi_overlay_[binary/color]: A visualization of the src region used for the perspective transform. 
+- test#_05_perspectiveT_[binary/color]: Image after applying perspective transformation.
+- test#_06_undist: Image of lane pixels identified via sliding window search.
+- test#_07_polyfit: Image containing extrapolation of fitted polynomial curve.
+- test#_all_in_one: Image containing the previous steps, side-by-side, for comparison.
+- test#_output: The output image of the pipeline containing an unwarped image of the frame with the lane lines annotated in light green color.
+
+
